@@ -3,9 +3,9 @@ async function main() {
 
   console.log("Deploying contracts with the account:", deployer.address);
 
-  const DIDReg = await ethers.deployContract("EthereumDIDRegistry");
+  const Token = await ethers.deployContract("Token");
 
-  console.log("EthereumDIDRegistry address:", await DIDReg.getAddress());
+  console.log("Contract address:", await Token.getAddress());
 }
 
 main()
